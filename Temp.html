@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="Temp.css">
+  <style>
+    body{
+      background-image: url('nature-3481.gif');
+      background-color:rgb(131, 137, 227);
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+ <div class="converter">
+    <div>
+    
+      <div>
+        <img src="icons8-temperature.gif#" alt="" srcset="">
+      </div>
+      <h1 class="TC">Temperature Converter</h1></div>
+    <div class="conversion-section">
+      <p class="conversion-text">Convert from:</p>
+      <div class="input-container">
+        <input class="inputType" type="number" id="inputTemp" placeholder="Enter temperature...">
+        <div class="custom-select">
+          <select id="inputUnit">
+            <option value="celsius">Celsius</option>
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="kelvin">Kelvin</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="conversion-section">
+      <p class="conversion-text">Convert to:</p>
+      <div class="custom-select">
+        <select id="outputUnit">
+          <option value="celsius">Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+      </div>
+    </div>
+    <button class="convert-button" onclick="convertTemperature()">Convert</button>
+    <button class="reset-button" onclick="resetForm()">Reset</button>
+    <div class="output-container">
+      <p class="output-label">Converted Temperature:</p>
+      <p id="outputTemp" class="output-value"></p>
+    </div>
+    <div class="watermark">This website by Manoj Panchal</div>
+  </div>
+  <script src="Temp.js"></script>
+
+</body>
+</html>
